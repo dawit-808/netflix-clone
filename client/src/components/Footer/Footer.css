@@ -1,0 +1,24 @@
+.netflix-footer a {
+  color: #999;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.netflix-footer a:hover {
+  text-decoration: underline;
+  color: #e50914;
+}
+
+.footer-top-text {
+  margin-bottom: 1.5rem;
+  color: #999;
+}
+
+.footer-lang-select {
+  border: 1px solid #666;
+  font-size: 0.9rem;
+}
+
+.netflix-footer {
+  border-top: 1px solid #333;
+}

@@ -1,0 +1,32 @@
+.navbar-brand img {
+  height: 32px;
+}
+.nav-link:hover {
+  color: #e50914 !important;
+}
+
+.dropdown-menu {
+  background-color: #1c1c1c;
+  border: none;
+}
+
+.dropdown-item {
+  color: white;
+}
+
+.dropdown-item:hover {
+  background-color: #e50914;
+  color: white;
+}
+
+.navbar-nav .nav-item {
+  margin-left: 15px;
+}
+
+.navbar {
+  z-index: 999;
+}
+
+.navbar .nav-link > svg {
+  vertical-align: middle;
+}
