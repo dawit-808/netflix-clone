@@ -10,7 +10,7 @@ import AccountCircleSharpIcon from "@mui/icons-material/AccountCircleSharp";
 
 function Header() {
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <nav className="navbar navbar-expand-lg navbar-dark fixed-top">
       <div className="container">
         {/* Logo */}
         <a className="navbar-brand" href="#home">
@@ -49,7 +49,7 @@ function Header() {
               </li>
               <li>
                 <a className="dropdown-item" href="#logout">
-                  Logout
+                  Log Out
                 </a>
               </li>
             </ul>

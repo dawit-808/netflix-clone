@@ -1,0 +1,26 @@
+.banner {
+  color: white;
+  object-fit: cover;
+  height: 80vh;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  padding: 2rem;
+}
+
+.banner-content {
+  max-width: 600px;
+}
+
+.banner-title {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.banner-description {
+  font-size: 1.2rem;
+  line-height: 1.4;
+  max-width: 80%;
+}

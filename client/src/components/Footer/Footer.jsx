@@ -6,7 +6,7 @@ function Footer() {
     <footer className="netflix-footer bg-dark text-muted pt-4 pb-5">
       <div className="container">
         <p className="footer-top-text">
-          Questions? Call <a href="tel:1-800-000-0000">1-800-000-0000</a>
+          Questions? Call <a href="tel:1-800-000-0000">+251 922090582</a>
         </p>
 
         <div className="row">

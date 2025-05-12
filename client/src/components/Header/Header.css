@@ -6,7 +6,7 @@
 }
 
 .dropdown-menu {
-  background-color: #1c1c1c;
+  background-color: #00000099;
   border: none;
 }
 
@@ -24,6 +24,7 @@
 }
 
 .navbar {
+  background-color: #00000099;
   z-index: 999;
 }
 
