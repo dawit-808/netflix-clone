@@ -27,18 +27,29 @@ function Banner() {
       });
   }, []);
 
+  const truncateString = (string, maxLength) =>
+    string.length > maxLength ? `${string.substring(0, maxLength)}…` : string;
+
   return (
-    <header
-      className="banner"
-      style={{
-        backgroundImage: `linear-gradient(to top, rgba(0,0,0,0.8), rgba(0,0,0,0)), url(${image_base_url}${poster})`,
-      }}
-    >
-      <div className="banner-content">
-        <h1 className="banner-title">{title}</h1>
-        <p className="banner-description">{description}</p>
-      </div>
-    </header>
+    <>
+      <header
+        className="banner"
+        style={{
+          backgroundImage: `linear-gradient(to top, rgba(0,0,0,0.8), rgba(0,0,0,0)), url(${image_base_url}${poster})`,
+        }}
+      >
+        <div className="banner-content">
+          <h1 className="banner-title">{title}</h1>
+          <div className="banner-buttons my-4">
+            <button className="btn btn-light me-2">Play</button>
+            <button className="btn btn-outline-light">Watch List</button>
+          </div>
+          <p className="banner-description">
+            {truncateString(description, 150)}
+          </p>
+        </div>
+      </header>
+    </>
   );
 }
 
