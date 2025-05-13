@@ -8,6 +8,7 @@ function Banner() {
   const [description, setDescription] = useState("");
   const api = import.meta.env.VITE_API_KEY;
   const base_url = "https://api.themoviedb.org/3/discover/movie";
+  const image_base_url = "https://image.tmdb.org/t/p/original";
 
   useEffect(() => {
     axios
@@ -15,12 +16,11 @@ function Banner() {
       .then((res) => {
         const results = res.data.results;
         const random = Math.floor(Math.random() * results.length);
-        const poster = results[random].poster_path;
-        const title = results[random].original_title;
-        const description = results[random].overview;
-        setPoster(poster);
-        setTitle(title);
-        setDescription(description);
+        const movie = results[random];
+
+        setPoster(movie.backdrop_path);
+        setTitle(movie.title);
+        setDescription(movie.overview);
       })
       .catch((err) => {
         console.log(err);
@@ -31,7 +31,7 @@ function Banner() {
     <header
       className="banner"
       style={{
-        backgroundImage: `linear-gradient(to top, rgba(0,0,0,0.8), rgba(0,0,0,0.2)), url(https://image.tmdb.org/t/p/original${poster})`,
+        backgroundImage: `linear-gradient(to top, rgba(0,0,0,0.8), rgba(0,0,0,0)), url(${image_base_url}${poster})`,
       }}
     >
       <div className="banner-content">
