@@ -1,0 +1,7 @@
+.row-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+.row-wrapper img {
+  cursor: pointer;
+}

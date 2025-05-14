@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import axios from "axios";
+import axios from "../../axios";
 import "./Banner.css";
 
 function Banner() {
@@ -7,13 +7,12 @@ function Banner() {
   const [title, setTitle] = useState("");
   const [description, setDescription] = useState("");
   const api = import.meta.env.VITE_API_KEY;
-  const base_url = "https://api.themoviedb.org/3/discover/movie";
   const image_base_url = "https://image.tmdb.org/t/p/original";
 
   useEffect(() => {
-    axios
-      .get(`${base_url}?api_key=${api}`)
-      .then((res) => {
+    const fetchBannerMovie = async () => {
+      try {
+        const res = await axios.get(`/discover/movie?api_key=${api}`);
         const results = res.data.results;
         const random = Math.floor(Math.random() * results.length);
         const movie = results[random];
@@ -21,10 +20,12 @@ function Banner() {
         setPoster(movie.backdrop_path);
         setTitle(movie.title);
         setDescription(movie.overview);
-      })
-      .catch((err) => {
-        console.log(err);
-      });
+      } catch (err) {
+        console.error("Failed to fetch banner movie:", err);
+      }
+    };
+
+    fetchBannerMovie();
   }, []);
 
   const truncateString = (string, maxLength) =>

@@ -3,8 +3,8 @@ import "./Footer.css";
 
 function Footer() {
   return (
-    <footer className="netflix-footer bg-dark text-muted pt-4 pb-5">
-      <div className="container">
+    <>
+      <footer className="container netflix-footer text-muted pt-4 pb-5">
         <p className="footer-top-text">
           Questions? Call <a href="tel:1-800-000-0000">+251 922090582</a>
         </p>
@@ -84,8 +84,8 @@ function Footer() {
         <p className="mt-3 text-light mb-0 small">
           &copy; 2025 Netflix Clone by Dawit Tesfaye
         </p>
-      </div>
-    </footer>
+      </footer>
+    </>
   );
 }
 
