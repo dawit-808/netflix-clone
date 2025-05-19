@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import axios from "../../../axios";
-import movieTrailer from "movie-trailer";
 import YouTube from "react-youtube";
 import "./Row.css";
 
@@ -23,12 +22,12 @@ function Row({ title, fetchUrl }) {
 
   const handleClick = (movie) => {
     if (trailerUrl) {
-      setTrailerUrl(""); // close the trailer if it's already open
+      setTrailerUrl("");
     } else {
       movieTrailer(movie?.title || movie?.name || "")
         .then((url) => {
           const urlParams = new URLSearchParams(new URL(url).search);
-          setTrailerUrl(urlParams.get("v")); // get YouTube video ID
+          setTrailerUrl(urlParams.get("v"));
         })
         .catch((error) => console.log(error));
     }
