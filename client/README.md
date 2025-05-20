@@ -4,7 +4,7 @@ A responsive Netflix clone built with **React**, **Vite**, and modern UI styling
 
 > 🚀 **Live Demo**
 >
-> - GitHub Pages: [https://dawit-808.github.io/netflix-clone](https://dawit-808.github.io/netflix-clone)
+> - Netlify: [https://net808flix.netlify.app/](https://net808flix.netlify.app/)
 
 ---
 
@@ -20,7 +20,7 @@ The site is safe — you can proceed or open it in **Incognito mode** to bypass 
 
 ## 📁 Project Structure
 
-netflic-clone/
+netflix-clone/
 ├── client/ # React app (Vite)
 │ ├── public/
 │ ├── src/
@@ -35,7 +35,7 @@ netflic-clone/
 - ⚛️ React (with Hooks)
 - ⚡ Vite
 - 🎨 CSS / Bootstrap
-- 📦 gh-pages (for deployment)
+- 🌐 Netlify (for deployment)
 - 🎞️ TMDB API
 
 ---
@@ -56,4 +56,5 @@ npm install
 
 # Run the app locally
 npm run dev
+
 ```
