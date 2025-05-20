@@ -5,7 +5,6 @@ A responsive Netflix clone built with **React**, **Vite**, and modern UI styling
 > 🚀 **Live Demos:**
 >
 > - GitHub Pages: [https://dawit-808.github.io/netflix-clone](https://dawit-808.github.io/netflix-clone)
-> - Netlify: [https://net808flix.netlify.app](https://net808flix.netlify.app)
 
 ---
 
