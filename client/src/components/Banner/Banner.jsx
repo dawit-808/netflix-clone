@@ -36,7 +36,8 @@ function Banner() {
       <header
         className="banner"
         style={{
-          backgroundImage: `linear-gradient(to top, rgba(0,0,0,0.8), rgba(0,0,0,0)), url(${image_base_url}${poster})`,
+          backgroundImage: `linear-gradient(to top, rgba(0,0,0,1) 0%, rgba(0,0,0,0.9) 20%, rgba(0,0,0,0) 50%)
+, url(${image_base_url}${poster})`,
         }}
       >
         <div className="banner-content">
