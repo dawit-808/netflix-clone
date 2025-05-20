@@ -6,11 +6,13 @@ function RowList() {
   return (
     <>
       <div>
+        {/* main lists */}
         <Row title="Now Playing" fetchUrl={requests.fetchPlaying} />
         <Row title="Popular" fetchUrl={requests.fetchPopular} />
         <Row title="Top Rated" fetchUrl={requests.fetchTop} />
         <Row title="Upcoming" fetchUrl={requests.fetchUpcoming} />
 
+        {/* list by genres */}
         <h2 className="text-center font-semibold m-4">Genres</h2>
 
         <Row title="Action" fetchUrl={requests.fetchAction} />

@@ -5,10 +5,12 @@ function Footer() {
   return (
     <>
       <footer className="container netflix-footer text-muted pt-4 pb-5">
+        {/* contact */}
         <p className="footer-top-text">
-          Questions? Call <a href="tel:1-800-000-0000">+251 922090582</a>
+          Questions? Call <a href="tel:+251 922090582">+251 922090582</a>
         </p>
 
+        {/* more links */}
         <div className="row">
           <div className="col-6 col-md-3">
             <ul className="list-unstyled">
@@ -73,6 +75,7 @@ function Footer() {
           </div>
         </div>
 
+        {/* language selection */}
         <select
           className="form-select bg-dark text-light footer-lang-select"
           style={{ width: "150px" }}
@@ -81,6 +84,7 @@ function Footer() {
           <option>Amharic</option>
         </select>
 
+        {/* copyright */}
         <p className="mt-3 text-light mb-0 small">
           &copy; 2025 Netflix Clone by Dawit Tesfaye
         </p>
