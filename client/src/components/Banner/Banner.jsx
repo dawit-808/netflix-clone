@@ -28,6 +28,7 @@ function Banner() {
     fetchBannerMovie();
   }, []);
 
+  // text minimizer
   const truncateString = (string, maxLength) =>
     string.length > maxLength ? `${string.substring(0, maxLength)}…` : string;
 
