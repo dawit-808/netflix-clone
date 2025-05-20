@@ -2,9 +2,19 @@
 
 A responsive Netflix clone built with **React**, **Vite**, and modern UI styling. This project mimics the look and feel of the Netflix homepage and showcases movie posters, categories, and more.
 
-> 🚀 **Live Demos:**
+> 🚀 **Live Demo**
 >
 > - GitHub Pages: [https://dawit-808.github.io/netflix-clone](https://dawit-808.github.io/netflix-clone)
+
+---
+
+⚠️ **Disclaimer**  
+This project is a personal educational clone of Netflix, built for learning purposes only.  
+It is **not affiliated with or endorsed by Netflix** in any way.
+
+🔐 **Browser Warning Note**  
+If Chrome flags this as a deceptive or dangerous site, it’s likely because the UI closely resembles Netflix.  
+The site is safe — you can proceed or open it in **Incognito mode** to bypass the warning.
 
 ---
 
