@@ -12,7 +12,7 @@ function RowList() {
         <Row title="Upcoming" fetchUrl={requests.fetchUpcoming} />
         <Row title="Action" fetchUrl={requests.fetchAction} />
         <Row title="Comedy" fetchUrl={requests.fetchComedy} />
-        <Row title="Romance" fetchUrl={requests.fetchRomance} />
+        {/* <Row title="Romance" fetchUrl={requests.fetchRomance} /> */}
         <Row title="Documentary" fetchUrl={requests.fetchDocumentary} />
       </div>
     </>

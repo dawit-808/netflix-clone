@@ -3,8 +3,10 @@
 A responsive Netflix clone built with **React**, **Vite**, and modern UI styling. This project mimics the look and feel of the Netflix homepage and showcases movie posters, categories, and more.
 
 > 🚀 **Live Demos:**
+>
 > - GitHub Pages: [https://dawit-808.github.io/netflix-clone](https://dawit-808.github.io/netflix-clone)
 > - Netlify: [https://net808flix.netlify.app](https://net808flix.netlify.app)
+
 ---
 
 ## 📁 Project Structure
@@ -15,9 +17,7 @@ netflic-clone/
 │ ├── src/
 │ ├── index.html
 │ ├── vite.config.js
-│ └── ...
-└── README.md
-
+│ └── README.md
 
 ---
 
@@ -28,6 +28,7 @@ netflic-clone/
 - 🎨 CSS / Bootstrap
 - 📦 gh-pages (for deployment)
 - 🎞️ TMDB API
+
 ---
 
 ## 📦 Installation & Setup
@@ -46,3 +47,4 @@ npm install
 
 # Run the app locally
 npm run dev
+```
